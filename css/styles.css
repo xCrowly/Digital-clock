@@ -21,17 +21,24 @@ body {
 #date-main {
     display: flex;
     flex-wrap: wrap;
-    width: calc(188px * 2);
+    flex-flow: column;
+    width: fit-content;
     height: auto;
-    align-items: baseline;
     height: auto;
     text-align: center;
-    margin: 100px calc(100% / 2 - 186px);
+    margin: 100px auto;
+    align-self: center;
     padding: 30px;
     padding-top: 20px;
     border: 4px solid rgb(32, 32, 32);
     animation: flip 1s 0s;
     animation-duration: 2s;
+}
+
+#date-main-item {
+    width: 100%;
+    height: auto;
+    text-align: center;
 }
 
 #hours {
