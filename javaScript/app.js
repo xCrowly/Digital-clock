@@ -15,7 +15,7 @@ function updateTime() {
     curruntSecond.innerHTML = d.getSeconds();
     curruntDayNumber.innerHTML = d.getDate();
     curruntDay.innerHTML = days[d.getDay()];
-    curruntMonth.innerHTML = d.getMonth() + "/";
+    curruntMonth.innerHTML = d.getMonth()+ 1 + "/";
     curruntYear.innerHTML = d.getFullYear();
     window.setTimeout(() => {
         updateTime();
@@ -25,11 +25,10 @@ updateTime();
 
 function changeHeaderColor() {
     var randomColor = Math.floor(Math.random() * 1000000);
-
     headerText.setAttribute('style', 'color: #' + randomColor + ";");
     window.setTimeout(() => {
         changeHeaderColor();
-    }, 1000);    
+    }, 1000);
 }
 
 changeHeaderColor();
