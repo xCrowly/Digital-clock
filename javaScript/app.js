@@ -15,7 +15,7 @@ function updateTime() {
     curruntSecond.innerHTML = d.getSeconds();
     curruntDayNumber.innerHTML = d.getDate();
     curruntDay.innerHTML = days[d.getDay()];
-    curruntMonth.innerHTML = d.getMonth()+ 1 + "/";
+    curruntMonth.innerHTML = d.getMonth() + 1 + "/";
     curruntYear.innerHTML = d.getFullYear();
     window.setTimeout(() => {
         updateTime();
